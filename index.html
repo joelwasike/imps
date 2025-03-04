@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <script src="./js/index.js" defer="1"></script>
         <script src="https://kit.fontawesome.com/7a69ab92ff.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <link rel="icon" type="image/x-icon" href="./favicon-16x16.png">
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/output.css">
@@ -16,14 +17,22 @@
     </head>
     <body class="relative w-screen min-h-screen">
         <!-- Navbar start -->
-        <nav class="navContainer fixed h-[65px] w-full bg-white z-20 top-0 left-0  border-b md:border-gray-200">
+        <nav class="navContainer fixed h-[65px] w-full bg-white z-20 top-0 left-0  border-b md:border-gray-200 items-center">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#home" class="flex items-center">
                     <img src="./images/logo.png" class="h-8 mr-3" alt="Logo">
                     <span class="self-center text-2xl font-semibold text-gray-900 whitespace-nowrap">Impala Pay Limited</span>
                 </a>
-                <div class="flex md:order-2">
+                <a href="assets/impala-pay.apk" download class="bg-yellow-400 hover:bg-blue-700 cursor-pointer text-black font-normal py-2 px-4 rounded-full md:order-2 hidden md:flex gap-4 items-center">
+                    Download App
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                </a>
+
+                <div class="flex md:order-2 md:hidden">
                     <!-- focus:ring-2 focus:ring-gray-200 -->
+                      
                     <button
                         data-collapse-toggle="navbar-sticky"
                         type="button"
@@ -67,6 +76,7 @@
                         </svg>
                     </button>
                 </div>
+
                 <div class="h-full navHeader items-center justify-between w-full md:flex md:w-auto md:order-1 flex" id="navbar-sticky ">
                     <ul class="navList hide w-full h-full flex-col gap-1 md:gap-0 p-4 md:p-0 mt-4 md:flex md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
                         <li class="navLinks home activeLink">
@@ -87,9 +97,21 @@
                         <li class="navLinks contact">
                             <a href="#contact" class=" navLink hover:bg-yellow-100 block transition-all py-2 px-2 md:h-[30px]  pr-4 text-yellow-400  md:hover:border-b-2 md:border-yellow-400   md:hover:bg-transparent hover:text-black md:p-0 ">Contact Us</a>
                         </li>
+                        
+                        <a href="assets/impala-pay.apk" download class="bg-yellow-400 hover:bg-blue-700 cursor-pointer text-black font-normal py-2 px-4 rounded-full  md:hidden flex w-max gap-4 items-center">
+                            Download App
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                              </svg>
+                      </a>
+                       
                     </ul>
+                   
                 </div>
+                
             </div>
+           
         </nav>
         <!-- Navbar end -->
         <!-- Hero section start -->
@@ -411,6 +433,8 @@ To transform Digital Services in Africa by eliminating enabling easy, secure and
                         <a class="hover:opacity-75 text-[14px] text-gray-400" href="#about"> About Us</a>
                         <a class="hover:opacity-75 text-[14px] text-gray-400" href="#about"> Why Us</a>
                     </nav>
+
+                    
                 </div>
                 <div class="min-w-[200px]  py-2">
                     <p class=" text-white text-[18px] font-bold">
