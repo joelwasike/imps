@@ -123,13 +123,27 @@ html{
 /* section.section{
     min-height: 100vh;
 } */
-section.homeSection{
+/* section.homeSection{
     height: 100vh;
     background-image:
-    linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url("../images/istockphoto-1332002332-612x612.jpg");
+    linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.6)), url("../images/istockphoto-1335295270-612x612.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;      
+} */
+section.homeSection {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+section.homeSection video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    z-index: -1;
 }
 .title{
     width: 60%;
